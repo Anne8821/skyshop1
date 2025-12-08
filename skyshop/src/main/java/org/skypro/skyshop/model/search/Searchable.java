@@ -18,4 +18,5 @@ public interface Searchable {
         if (query == null) return false;
         return getStringRepresentation().toLowerCase().contains(query.toLowerCase());
     }
+
 }

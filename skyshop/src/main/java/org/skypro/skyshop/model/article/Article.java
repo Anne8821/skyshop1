@@ -41,4 +41,5 @@ public record Article(UUID id, String title, String text) implements Searchable 
     public String toString() {
         return title + ". " + text;
     }
+
 }
