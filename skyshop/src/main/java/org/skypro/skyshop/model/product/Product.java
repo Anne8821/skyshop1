@@ -48,3 +48,4 @@ public abstract class Product implements Searchable {
     public abstract boolean isSpecial();
     public abstract String getContactType();
 }
+

@@ -51,4 +51,5 @@ public class StorageService {
         all.addAll(articleMap.values());
         return all;
     }
+
 }
