@@ -20,6 +20,6 @@ public class SearchService {
         return storageService.getAllSearchables().stream()
                 .filter(s -> s.matches(pattern))
                 .map(SearchResult::fromSearchable)
-                .collect(Collectors.toList());
+                .toList();
     }
 }

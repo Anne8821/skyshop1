@@ -15,7 +15,9 @@ public interface Searchable {
     }
 
     default boolean matches(String query) {
-        if (query == null) return false;
-        return getStringRepresentation().toLowerCase().contains(query.toLowerCase());
+        if (query == null) {
+            return false;
+        }
+        return getSearchTerm().toLowerCase().contains(query.toLowerCase());
     }
 }

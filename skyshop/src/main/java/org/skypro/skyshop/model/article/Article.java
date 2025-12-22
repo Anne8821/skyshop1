@@ -19,12 +19,12 @@ public record Article(UUID id, String title, String text) implements Searchable 
 
     @Override
     public UUID getId() {
-        return null;
+        return id;
     }
 
     @Override
     public String getName() {
-        return "";
+        return title;
     }
 
     @Override
@@ -37,8 +37,8 @@ public record Article(UUID id, String title, String text) implements Searchable 
         return false;
     }
 
-    @Override
-    public String toString() {
-        return title + ". " + text;
-    }
+ //   @Override
+  //  public String toString() {
+   //     return title + ". " + text;
+   // }
 }

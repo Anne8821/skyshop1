@@ -24,13 +24,13 @@ public class SimpleProduct extends Product {
         return false;
     }
 
-    @Override
-    public String getContactType() {
-        return "";
-    }
+//    @Override
+//    public String getContactType() {
+//        return "";
+//   }
 
-    @Override
-    public String toString() {
-        return getName() + ": " + price;
-    }
+//    @Override
+//    public String toString() {
+//        return getName() + ": " + price;
+//    }
 }
