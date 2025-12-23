@@ -5,6 +5,7 @@ import org.skypro.skyshop.model.article.Article;
 import org.skypro.skyshop.product.SimpleProduct;
 import org.skypro.skyshop.product.FixPriceProduct;
 import org.springframework.stereotype.Service;
+import org.skypro.skyshop.model.search.Searchable;
 
 import java.util.*;
 
@@ -29,12 +30,12 @@ public class StorageService {
                 "Статья о осенней обуви",
                 "Обзоры новой коллекции");
 
-        Article a2 = new Article(UUID.randomUUID(),
-                "Кастомизация рубашек",
-                "Украшения");
+     //   Article a2 = new Article(UUID.randomUUID(),
+     //           "Кастомизация рубашек",
+     //           "Украшения");
 
         articleMap.put(a1.id(), a1);
-        articleMap.put(a2.id(), a2);
+     //   articleMap.put(a2.id(), a2);
     }
 
     public Collection<Product> getAllProducts() {
@@ -45,10 +46,15 @@ public class StorageService {
         return articleMap.values();
     }
 
-    public Collection<org.skypro.skyshop.model.search.Searchable> getAllSearchables() {
-        List<org.skypro.skyshop.model.search.Searchable> all = new ArrayList<>();
-        all.addAll(productMap.values());
-        all.addAll(articleMap.values());
-        return all;
+    public Collection<Searchable> getAllSearchables() {
+        List<Searchable> result = new ArrayList<>();
+        result.addAll(productMap.values());
+        result.addAll(articleMap.values());
+        return result;
     }
+
+    public Optional<Product> getProductById(UUID id) {
+        return Optional.ofNullable(productMap.get(id));
+    }
+
 }
