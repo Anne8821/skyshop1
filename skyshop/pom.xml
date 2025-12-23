@@ -8,10 +8,10 @@
 		<version>3.4.12</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>org.skypro.</groupId>
-	<artifactId>skyshop.</artifactId>
+	<groupId>org.skypro</groupId>
+	<artifactId>skyshop</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>skyshop.</name>
+	<name>skyshop</name>
 	<description>Counter service that counts amount of requests to page</description>
 	<url/>
 	<licenses>
@@ -44,19 +44,6 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>22</source>
-                    <target>22</target>
-                    <compilerArgs>--enable-preview</compilerArgs>
-                </configuration>
-            </plugin>
         </plugins>
 	</build>
 
