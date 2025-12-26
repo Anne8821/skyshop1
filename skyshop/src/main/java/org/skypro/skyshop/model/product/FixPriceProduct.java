@@ -20,13 +20,13 @@ public class FixPriceProduct extends Product {
         return true;
     }
 
-    @Override
-    public String getContactType() {
-        return "";
-    }
+ //   @Override
+ //   public String getContactType() {
+ //       return "";
+ //   }
 
-    @Override
-    public String toString() {
-        return getName() + ": фиксированная цена " + FIXED_PRICE;
-    }
+ //   @Override
+ //   public String toString() {
+  //      return getName() + ": фиксированная цена " + FIXED_PRICE;
+  //  }
 }

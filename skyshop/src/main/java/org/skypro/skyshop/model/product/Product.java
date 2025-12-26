@@ -39,12 +39,13 @@ public abstract class Product implements Searchable {
         return "PRODUCT";
     }
 
-    @Override
-    public String getStringRepresentation() {
-        return getName() + " - PRODUCT";
-    }
+  //  @Override
+ //   public String getStringRepresentation() {
+ //       return getName() + " - PRODUCT";
+ //   }
 
     public abstract int getPrice();
     public abstract boolean isSpecial();
-    public abstract String getContactType();
+ //   public abstract String getContactType();
 }
+
