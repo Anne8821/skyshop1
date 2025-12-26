@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class ShopControllerAdvice {
 
-    @ExceptionHandler(NoSuchProductException.class)
+    @ExceptionHandler
     public ResponseEntity<ShopError> handleNoSuchProduct(NoSuchProductException ex) {
 
         ShopError error = new ShopError(
